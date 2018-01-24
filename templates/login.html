@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block head %}Welcome to Django{% endblock %}
+{% block content %}
+    <div class="pen-title logo">
+	
+	<div class="pen-title logo">
+        {% load static %}
+		<img src="{%static 'images/logo.png'%}" alt="">
+    </div>
+    <div class="container">
+        <div class="card"></div>
+        <div class="card">
+            <h1 class="title">
+                Welcome, Please Login
+                <div class="close"></div>
+            </h1>
+			<!--<input type='text' data-bind="value.login_error">-->
+            <form method="POST">
+                <div class="input-container">
+                    <input type="text" id="username"  data-bind="value:username" />
+                    <label for="username"><i class="fa fa-user"></i> &nbsp; Username</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" data-bind="value:password"/>
+                    <label for="password"><i class="fa fa-lock"></i> &nbsp; Password</label>
+                    <div class="bar"></div>
+                </div>
+				
+				<span class='text-danger' id='errorspan' data-bind:"value.login_error"></span>
+				
+                <div class="button-container">
+                    <button data-bind="click:signup"><span>Login &nbsp;&nbsp;<i class="fa fa-chevron-right"></i></span> </button>
+                    <br><br>
+                </div>
+                </form>
+            </div>
+        </div>
+		{% load static %}
+        <script src="{%static 'js/LoginKO.js'%}" defer="defer" type="text/javascript"></script>
+
+        <script>
+
+        $(document).ready(function(){
+			window.sessionStorage.accessToken = '';
+            $("input").focusin(function(){
+                $(this).addClass("focused-input");
+            });
+            $("input").focusout(function(){
+                if ($(this).val().length === 0) {
+                  $(this).removeClass("focused-input");
+                }
+                else{
+                  $(this).addClass("focused-input");
+                }
+            });
+        });
+
+        </script>
+{% endblock %}
+
+    

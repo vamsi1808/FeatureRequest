@@ -1,0 +1,76 @@
+﻿form-ui input{
+    margin: 5px 10px 0 10px
+}
+.form-label {
+    display: inline-block;
+    width: 100px;
+}
+
+/*----- UI GRID STYLE -----*/
+
+.ui-jqgrid .ui-jqgrid-view {
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background-image: none;
+    background-color: #018ea7;
+    color: #fff;
+}
+.ui-jqgrid .ui-jqgrid-htable th div {
+    height:35px;
+    padding:8px;
+    font-weight:700;
+    font-size:13px;
+}
+.ui-jqgrid .ui-jqgrid-htable th {
+    height:auto;
+    /*padding:0px;*/
+}
+.ui-widget-header {
+    background-image: none;
+    background-color: #fff;
+}
+.ui-jqgrid .ui-jqgrid-titlebar {
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.ui-widget-content {
+    background: none;
+    border: 1px solid #286090;
+    overflow: hidden;
+}
+.ui-jqgrid tr.jqgrow td {
+    padding: 8px;
+}
+
+.ui-jqgrid .ui-jqgrid-pager {
+    height: 45px;
+    padding:10px !important;
+}
+.ui-jqgrid tr.jqgrow:nth-child(2n+1) {
+    background-color: rgba(40, 96, 144, 0.05);
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border-color: #286090;
+}
+.ui-widget{
+    background-color:#fff;
+}
+.ui-jqgrid .ui-pg-selbox,
+.ui-jqgrid .ui-pg-input {
+    color: #000;
+}
+.ui-widget-content a {
+    color:#018ea7;
+}.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+    color: #018ea7;
+}
+.ui-state-default input[type=text]{
+    color:#333;
+    font-size: 12px;
+} 
+ 
+
+
