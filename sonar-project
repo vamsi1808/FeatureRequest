@@ -1,0 +1,9 @@
+sonar.projectKey=FeatureRequest
+sonar.projectName=FeatureRequest
+sonar.projectVersion=1.0
+# Language
+sonar.language=py
+
+sonar.sources=FeatureRequest
+
+sonar.sourceEncoding=UTF-8
